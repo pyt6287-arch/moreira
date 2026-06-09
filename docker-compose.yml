@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    environment:
+      - SUPABASE_URL
+      - SUPABASE_KEY
+    restart: always
